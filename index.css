@@ -1,0 +1,304 @@
+.cardhead {
+  box-sizing: border-box;
+  margin: 15px;
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+}
+.marg{
+  margin: 22px;
+}
+.hg{
+  width: 1056px;
+}
+.card-body{
+  width: 1056px;
+}
+
+.carousel-item{
+  width: 1326px;
+}
+
+.bottom{
+
+
+}
+
+
+body{
+  font-size: 100px;
+}
+.search{
+  padding: 15px;
+}
+
+/* .cardhead:hover {
+  border: 0.5px solid rgb(71, 249, 0);
+  transform: scale(1.01);
+} */
+
+.cardhead:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+.nameuser{
+  margin-top: 0px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 190px;
+  height: 254px;
+  perspective: 1000px;
+  font-family: sans-serif;
+
+  
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.caedbd{
+   display: flex;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid coral;
+  border-radius: 1rem;
+}
+
+.flip-card-front {
+  background: linear-gradient(120deg, bisque 60%, rgb(255, 231, 222) 88%, rgb(255, 211, 195) 40%, rgba(255, 127, 80, 0.603) 48%);
+  color: coral;
+}
+
+.flip-card-back {
+  background: linear-gradient(120deg, rgb(255, 174, 145) 30%, coral 88%, bisque 40%, rgb(255, 185, 160) 78%);
+  color: white;
+  transform: rotateY(180deg);
+}
+.images{
+  width: 250px; 
+  height: 250px; 
+  border-radius: 50%; 
+  margin-left: 20px;
+}
+.pimg{
+  width: 100px;
+   height: 100px;
+    border-radius: 50%;
+     margin-left: 20px;
+}
+ul {
+  list-style: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.bd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ height: 75px;
+
+}
+.navigations {
+  position: relative;
+  width: 98%;
+  height: 60px;
+  background: linear-gradient(45deg,  #0d2c12, #09c341, #0d2c12);
+  
+  display: flex;
+  justify-content: space-between;
+  
+  border-radius: 10px;
+ 
+ 
+  bottom: 0;
+}
+.icon:hover {
+  z-index: 2; /* Increase the z-index on hover */
+}
+
+.navigations ul li a .icon:hover {
+  color: #ffcc00; /* Change to the desired hover color */
+
+    z-index: 2; /* Increase the z-index on hover */
+  
+}
+.navigations ul {
+  display: flex;
+  justify-content: space-between;
+  width: 98%;
+}
+.navigations ul li {
+  position: relative;
+  width: 98%;
+  height: 60px;
+  list-style: none;
+ 
+}
+.navigations ul li a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+}
+.navigations ul li a .icon {
+  position: relative;
+  display: block;
+  line-height: 75px;
+  font-size: 1.5em;
+  text-align: center;
+  color: #fff;
+  transition: .5s;
+}
+
+.navigations ul li a .text {
+  position: absolute;
+  color: #fff;
+  font-weight: 400;
+  font-size: .75em;
+  letter-spacing: .05em;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: .5s;
+}
+
+
+
+
+
+
+
+
+
+/* Media query for mobile devices */
+/* Media query for mobile devices */
+@media only screen and (max-width: 768px) {
+  .cardhead {
+      margin: 15px;
+      border-radius: 12px;
+  }
+
+  .flip-card {
+      width: 130px;
+      height: 170px;
+  }
+
+  .title {
+      font-size: 1.2em;
+  }
+
+  .images {
+    width: 100px; 
+    height: 100px; 
+  }
+
+  .textsz {
+    font-size: 10px;
+  }
+
+  .flip-card {
+    flex-basis: 45%; /* Adjust as needed */
+  }
+
+  .cardhead:hover {
+    border: 0.5px solid rgb(71, 249, 0);
+    transform: scale(1.01);
+    width: 90px;
+    height: 90px;
+    font-size: 9px;
+  }
+
+  .ourproduct {
+    font-size: 9px;
+  }
+
+  .pimg {
+    width: 80px;
+    height: 80px;
+  }
+
+  .nameuser {
+    margin-top: -26px;
+  }
+
+  .search {
+    margin-top: -23px;
+  }
+
+  .marg {
+    margin-top: -15px;
+  }
+
+  .flip-card {
+    width: 75px; /* Corrected width value */
+    height: 75px;
+    font-size: 7px;
+    margin-right: 10px; /* Adjust as needed for the desired space between cards */
+  }
+
+  .flip-card:last-child {
+    margin-right: 0; /* Remove margin from the last card to avoid extra space */
+  }
+
+  .caedbd {
+    padding: 21px;
+    margin-top: -18px;
+  }
+
+  .bottom{
+    margin-left: -50px;
+    background-color: gainsboro;
+    padding: 10px;
+  }
+  .navigations{
+    width: 350px;
+  }
+  .navigations ul {
+    width: 350px;
+  }
+}
+
